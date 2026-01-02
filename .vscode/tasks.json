@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Pedestrain Classifier",
+      "type": "shell",
+      "command": "clang++",
+      "args": [
+        "-std=c++17",
+        "-Iinclude",
+        "-I/opt/homebrew/include",
+        "src/main.cpp",
+        "src/data_loader.cpp",
+        "src/annotation_parser.cpp",
+        "-L/opt/homebrew/lib",
+        "-ltinyxml2",
+        "-o",
+        "app"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

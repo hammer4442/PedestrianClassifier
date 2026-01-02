@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/Users/hankperry/Downloads/Project 2026/Pedestrain_Classifier/build",
+  "command": "/usr/bin/clang++ -DTINYXML2_DEBUG -DTINYXML2_IMPORT -D_FILE_OFFSET_BITS=64 -I\"/Users/hankperry/Downloads/Project 2026/Pedestrain_Classifier/include\" -isystem /opt/homebrew/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/app.dir/src/main.cpp.o -c \"/Users/hankperry/Downloads/Project 2026/Pedestrain_Classifier/src/main.cpp\"",
+  "file": "/Users/hankperry/Downloads/Project 2026/Pedestrain_Classifier/src/main.cpp",
+  "output": "CMakeFiles/app.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/hankperry/Downloads/Project 2026/Pedestrain_Classifier/build",
+  "command": "/usr/bin/clang++ -DTINYXML2_DEBUG -DTINYXML2_IMPORT -D_FILE_OFFSET_BITS=64 -I\"/Users/hankperry/Downloads/Project 2026/Pedestrain_Classifier/include\" -isystem /opt/homebrew/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/app.dir/src/data_loader.cpp.o -c \"/Users/hankperry/Downloads/Project 2026/Pedestrain_Classifier/src/data_loader.cpp\"",
+  "file": "/Users/hankperry/Downloads/Project 2026/Pedestrain_Classifier/src/data_loader.cpp",
+  "output": "CMakeFiles/app.dir/src/data_loader.cpp.o"
+},
+{
+  "directory": "/Users/hankperry/Downloads/Project 2026/Pedestrain_Classifier/build",
+  "command": "/usr/bin/clang++ -DTINYXML2_DEBUG -DTINYXML2_IMPORT -D_FILE_OFFSET_BITS=64 -I\"/Users/hankperry/Downloads/Project 2026/Pedestrain_Classifier/include\" -isystem /opt/homebrew/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/app.dir/src/annotation_parser.cpp.o -c \"/Users/hankperry/Downloads/Project 2026/Pedestrain_Classifier/src/annotation_parser.cpp\"",
+  "file": "/Users/hankperry/Downloads/Project 2026/Pedestrain_Classifier/src/annotation_parser.cpp",
+  "output": "CMakeFiles/app.dir/src/annotation_parser.cpp.o"
+}
+]
