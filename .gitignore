@@ -37,5 +37,10 @@
 *.out
 *.app
 
+
+# Data 
+*.xml
+*.png
+
 # debug information files
 *.dwo
