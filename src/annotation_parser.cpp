@@ -41,15 +41,11 @@ vector<BndboxElement> annotation_parser(const std::string& path)
 
         BndboxElement bb;
         bb.path=path;
-        cout<<bb.path<<endl;
         bb.x1 = xmin;
-        cout<<bb.x1<<endl;
         bb.y1 = ymin;
-        cout<<bb.y1<<endl;
         bb.w = xmax - xmin;
-        cout<<bb.w<<endl;
         bb.h = ymax - ymin;
-        cout<<bb.h<<endl;
+        
 
         if (bb.w > 0 && bb.h > 0) {
             nums.push_back(bb);

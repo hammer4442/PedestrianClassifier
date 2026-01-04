@@ -1,6 +1,7 @@
 
 #include <string>
 #include <vector> 
+#include <filesystem>
 #ifndef DATA_LOADER_H
 #define DATA_LOADER_H
 
@@ -18,14 +19,20 @@ struct BndboxElement
 struct Sample
 {
     // Constructors
-    Sample();
-
-    private:
+    Sample(filesystem::path ind_path);
+    
         string name;
-        vector<BndboxElement> bndbox;
+        vector<BndboxElement> bbs;
+        bool pedestrian;
     
 
 };
+
+vector<Sample> positiveDataSet(int num_smaples);
+
+vector<Sample> negativeDataSet(int num_smaples);
+
+vector<Sample> createDataSet(int num_samples, float percent_positive);
 
 
 
