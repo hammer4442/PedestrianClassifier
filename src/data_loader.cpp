@@ -38,11 +38,13 @@ vector<Sample> positiveDataSet(int num_smaples)
     try {
         for (const auto& entry: filesystem::directory_iterator(data_path))
         {
+            // Is the element in the corresponding seeder
             vector<int>::iterator it = std::find(seeder.begin(), seeder.end(), count);
             if (it != seeder.end())
             {
                 filesystem::path ind_path = entry.path();
                 Sample s=Sample(ind_path);
+                // Make sure that there is a pedestrian in the image
                 if (s.bbs.size() > 0)
                 {
                     ret.push_back(s);
@@ -61,3 +63,7 @@ vector<Sample> positiveDataSet(int num_smaples)
     return ret;
 }
 
+vector<Sample> negativeDataSet(int num_smaples)
+{
+    return vector<Sample>();
+}

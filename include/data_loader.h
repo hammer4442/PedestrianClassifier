@@ -20,11 +20,11 @@ struct Sample
 {
     // Constructors
     Sample(filesystem::path ind_path);
-    
-        string name;
-        vector<BndboxElement> bbs;
-        bool pedestrian;
-    
+
+    string name;
+    vector<BndboxElement> bbs;
+    bool pedestrian;
+
 
 };
 
