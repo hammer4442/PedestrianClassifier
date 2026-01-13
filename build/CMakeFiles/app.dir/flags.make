@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = -DTINYXML2_DEBUG -DTINYXML2_IMPORT -D_FILE_OFFSET_BITS=64
 
-CXX_INCLUDES = -I"/Users/hankperry/Downloads/Project 2026/Pedestrain_Classifier/include" -isystem /opt/homebrew/include
+CXX_INCLUDES = -I"/Users/hankperry/Downloads/Project 2026/Pedestrain_Classifier/include" -isystem /opt/homebrew/Cellar/opencv/4.13.0_1/include/opencv4 -isystem /opt/homebrew/include
 
 CXX_FLAGSarm64 = -g -std=gnu++17 -arch arm64
 

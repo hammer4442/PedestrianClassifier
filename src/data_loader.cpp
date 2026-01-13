@@ -6,6 +6,7 @@
 #include <chrono>
 #include <random>
 #include <algorithm>
+#include <opencv2/opencv.hpp>
 
 
 using namespace std;
@@ -63,7 +64,17 @@ vector<Sample> positiveDataSet(int num_smaples)
     return ret;
 }
 
-vector<Sample> negativeDataSet(int num_smaples)
+vector<Sample> negativeDataSet(int num_smaples, Sample& s)
 {
     return vector<Sample>();
+}
+
+
+double computeIoU(const cv::Rect& a, const cv::Rect& b)
+{
+    int interArea = (a & b).area();
+    int unionArea = a.area() + b.area() - interArea;
+
+    if (unionArea <= 0) return 0.0;
+    return static_cast<double>(interArea) / unionArea;
 }

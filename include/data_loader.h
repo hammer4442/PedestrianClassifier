@@ -4,6 +4,7 @@
 #include <filesystem>
 #ifndef DATA_LOADER_H
 #define DATA_LOADER_H
+#include <opencv2/opencv.hpp>
 
 using namespace std;
 
@@ -30,11 +31,11 @@ struct Sample
 
 vector<Sample> positiveDataSet(int num_smaples);
 
-vector<Sample> negativeDataSet(int num_smaples);
+vector<Sample> negativeDataSet(int num_smaples, Sample& s);
 
 vector<Sample> createDataSet(int num_samples, float percent_positive);
 
-
+double computeIoU(const cv::Rect& a, const cv::Rect& b)
 
 #endif 
 
